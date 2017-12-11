@@ -8,7 +8,7 @@ class Rectangle : public Object{
 public:
     Rectangle(double h, double w, double x, double y, byte r, byte g, byte b): h(h), w(w), x(x), y(y), r(r), g(g), b(b) {}
     
-    virtual void draw(/*Frame &frame*/) const;
+    virtual void draw() const;
     virtual void update(double dt);
     
     void setSpeed(double dx, double dy);
